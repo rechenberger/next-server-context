@@ -30,3 +30,35 @@ export const NestedServerComponent = () => {
   return <div>NestedServerComponent: {params.myParam}</div>
 }
 ```
+
+## Custom Context
+
+/myContext.ts
+
+```ts
+const myContext = createContext<{
+  myValue: string
+}>()
+```
+
+/ParentComp.tsx
+
+```tsx
+import { myContext } from './myContext'
+
+export const ParentComp = () => {
+  myContext.set({ myValue: 'hi there' })
+  return <ChildComp />
+}
+```
+
+/ChildComp.tsx
+
+```tsx
+import { myContext } from './myContext'
+
+export const ChildComp = () => {
+  const { myValue } = myContext.getOrThrow()
+  return <div>ChildComp: {myValue}</div>
+}
+```
