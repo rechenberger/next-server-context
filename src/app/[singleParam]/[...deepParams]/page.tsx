@@ -1,7 +1,7 @@
 import { NestedServerComponent } from '@/app/NestedServerComponent'
-import { PageContextWrapper } from '@/lib/page-context'
+import { pageContext } from '@/lib/pageContext'
 
-export default PageContextWrapper(() => {
+export default pageContext.Wrapper(({ params, searchParams }) => {
   return (
     <>
       <h1>Page with a lot of Params</h1>

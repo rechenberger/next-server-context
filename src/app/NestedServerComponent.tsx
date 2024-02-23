@@ -1,13 +1,13 @@
-import { getPageContextOrThrow } from '@/lib/page-context'
+import { pageContext } from '@/lib/pageContext'
 
 export const NestedServerComponent = () => {
-  const { params, searchParams } = getPageContextOrThrow()
+  const { params, searchParams } = pageContext.getOrThrow()
   return (
     <>
       <div className="p-2 border rounded flex flex-col gap-4">
         <div>
           Nested Server Component using{' '}
-          <span className="font-mono">getPageContextOrThrow()</span>
+          <span className="font-mono">pageContext.getOrThrow()</span>
         </div>
         <hr />
         <pre className="font-mono text-xs ">

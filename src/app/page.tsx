@@ -1,7 +1,7 @@
-import { PageContextWrapper } from '@/lib/page-context'
+import { pageContext } from '@/lib/pageContext'
 import { NestedServerComponent } from './NestedServerComponent'
 
-export default PageContextWrapper(() => {
+export default pageContext.Wrapper(() => {
   return (
     <>
       <h1>Index</h1>
