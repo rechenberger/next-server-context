@@ -1,7 +1,7 @@
 import { z } from 'zod'
 
-export const createPageContext = (schema: z.Schema) => {
-  type PageContext = z.infer<typeof schema>
+export const createPageContext = <T extends z.Schema>(schema: T) => {
+  type PageContext = z.infer<T>
   const pageContextStorage = new AsyncLocalStorage<PageContext>()
 
   const set = (pageContext: PageContext) => {
@@ -31,7 +31,7 @@ export const createPageContext = (schema: z.Schema) => {
       })`)
     }
     const parsed = schema.parse(pageContext)
-    return parsed
+    return parsed as PageContext
   }
 
   const Wrapper = (Page: any) => {
