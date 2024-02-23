@@ -2,6 +2,12 @@
 
 The missing server context for Next.js App Directory.
 
+## Install
+
+```bash
+pnpm add @sodefa/next-server-context
+```
+
 ## Page Context
 
 /app/[myParam]/page.ts
