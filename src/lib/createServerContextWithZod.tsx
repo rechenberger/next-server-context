@@ -1,4 +1,4 @@
-import { z } from 'zod'
+import { type z } from 'zod'
 import { createServerContext } from './createServerContext'
 
 export const createServerContextWithZod = <
