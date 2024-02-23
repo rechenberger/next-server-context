@@ -3,7 +3,7 @@ import { createServerContext } from './createServerContext'
 
 export const createServerContextWithZod = <
   T extends z.Schema,
-  ComponentProps extends T
+  ComponentProps extends z.infer<T>
 >(
   schema: T
 ) => {
