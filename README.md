@@ -10,7 +10,7 @@ pnpm add @sodefa/next-server-context
 
 ## Page Context
 
-/app/[myParam]/page.ts
+/app/[myParam]/page.tsx
 
 ```tsx
 import { pageContext } from '@sodefa/next-server-context'
@@ -19,14 +19,14 @@ import { NestedServerComponent } from './NestedServerComponent'
 export default pageContext.Wrapper(({ params, searchParams }) => {
   return (
     <>
-      <h1>Page with a lot of Params</h1>
+      <h1>MyPage</h1>
       <NestedServerComponent />
     </>
   )
 })
 ```
 
-/app/[myParam]/NestedServerComponent.ts
+/app/[myParam]/NestedServerComponent.tsx
 
 ```tsx
 import { pageContext } from '@sodefa/next-server-context'
