@@ -1,4 +1,4 @@
-import { PageContextWrapper } from '@/page-context'
+import { PageContextWrapper } from '@/lib/page-context'
 import { NestedServerComponent } from './NestedServerComponent'
 
 export default PageContextWrapper(() => {

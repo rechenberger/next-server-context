@@ -1,4 +1,4 @@
-import { getPageContextOrThrow } from '@/page-context'
+import { getPageContextOrThrow } from '@/lib/page-context'
 
 export const NestedServerComponent = () => {
   const { params, searchParams } = getPageContextOrThrow()

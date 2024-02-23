@@ -1,5 +1,5 @@
 import { NestedServerComponent } from '@/app/NestedServerComponent'
-import { PageContextWrapper } from '@/page-context'
+import { PageContextWrapper } from '@/lib/page-context'
 
 export default PageContextWrapper(() => {
   return (
