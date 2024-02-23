@@ -1,0 +1,7 @@
+node_modules
+src
+.eslintrc.json
+.gitignore
+pnpm-lock.yaml
+tsconfig.json
+.turbo

@@ -1,4 +1,4 @@
-import { pageContext } from '@/lib/pageContext'
+import { pageContext } from '@sodefa/next-server-context'
 import { NestedServerComponent } from './NestedServerComponent'
 
 export default pageContext.Wrapper(() => {
