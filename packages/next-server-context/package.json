@@ -20,10 +20,13 @@
   "devDependencies": {
     "@types/node": "^18.16.0",
     "@types/react": "^18",
+    "@types/react-dom": "^18",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"
   },
   "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18",
     "zod": "^3.21.4"
   }
 }
