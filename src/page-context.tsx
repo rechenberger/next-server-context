@@ -16,7 +16,12 @@ export const getPageContext = () => {
 export const getPageContextOrThrow = () => {
   const pageContext = getPageContext()
   if (!pageContext) {
-    throw new Error('Page context not found')
+    throw new Error(`PageContext not found. Please wrap your Page with PageContextWrapper.
+    
+Example:
+export default PageContextWrapper(() => {
+  return <h1>My Page</h1>
+})`)
   }
   return pageContext
 }
