@@ -1,4 +1,4 @@
-import { myContext } from './page'
+import { myContext } from './myContext'
 
 export const NestedServerComponentWithZod = () => {
   const { params, searchParams } = myContext.getOrThrow()

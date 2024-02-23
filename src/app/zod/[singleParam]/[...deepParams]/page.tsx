@@ -1,19 +1,5 @@
-import { createServerContextWithZod } from '@/lib/createServerContextWithZod'
-import { z } from 'zod'
 import { NestedServerComponentWithZod } from './NestedServerComponent'
-
-export const myContext = createServerContextWithZod(
-  z.object({
-    params: z.object({
-      singleParam: z.string(),
-      deepParams: z.array(z.string()),
-    }),
-    searchParams: z.object({
-      p1: z.string().optional(),
-      p2: z.array(z.string()).optional(),
-    }),
-  })
-)
+import { myContext } from './myContext'
 
 export default myContext.Wrapper(() => {
   return (
