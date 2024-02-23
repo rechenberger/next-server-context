@@ -1,13 +1,13 @@
-import { somePageContext } from './page'
+import { myContext } from './page'
 
 export const NestedServerComponentWithZod = () => {
-  const { params, searchParams } = somePageContext.get()
+  const { params, searchParams } = myContext.getOrThrow()
   return (
     <>
       <div className="p-2 border rounded flex flex-col gap-4">
         <div>
           NestedServerComponentWithZod using{' '}
-          <span className="font-mono">somePageContext.get()</span>
+          <span className="font-mono">myContext.getOrThrow()</span>
         </div>
         <hr />
         <pre className="font-mono text-xs ">

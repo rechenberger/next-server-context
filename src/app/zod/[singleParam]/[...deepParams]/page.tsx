@@ -1,8 +1,8 @@
-import { createPageContext } from '@/lib/page-context-zod'
+import { createServerContextWithZod } from '@/lib/createServerContextWithZod'
 import { z } from 'zod'
 import { NestedServerComponentWithZod } from './NestedServerComponent'
 
-export const somePageContext = createPageContext(
+export const myContext = createServerContextWithZod(
   z.object({
     params: z.object({
       singleParam: z.string(),
@@ -15,7 +15,7 @@ export const somePageContext = createPageContext(
   })
 )
 
-export default somePageContext.Wrapper(() => {
+export default myContext.Wrapper(() => {
   return (
     <>
       <h1>Page with a lot of Params</h1>

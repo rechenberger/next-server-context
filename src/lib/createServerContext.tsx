@@ -1,4 +1,7 @@
-export const createServerContext = <T = unknown, Props extends T = T>() => {
+export const createServerContext = <
+  T = unknown,
+  ComponentProps extends T = T
+>() => {
   const pageContextStorage = new AsyncLocalStorage<T>()
 
   const set = (ctx: T) => {
@@ -18,10 +21,10 @@ export const createServerContext = <T = unknown, Props extends T = T>() => {
     return ctx
   }
 
-  const Wrapper = (Page: (props: Props) => JSX.Element) => {
-    const WrapperPage = (props: Props) => {
+  const Wrapper = (Component: (props: ComponentProps) => JSX.Element) => {
+    const WrapperPage = (props: ComponentProps) => {
       set(props)
-      return <Page {...(props as any)} /> // TODO: fix as any
+      return <Component {...(props as any)} /> // TODO: fix as any
     }
     return WrapperPage
   }
