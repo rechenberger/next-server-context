@@ -1,5 +1,5 @@
 import { NestedServerComponent } from '@/app/NestedServerComponent'
-import { pageContext } from '@/lib/pageContext'
+import { pageContext } from '@sodefa/next-server-context'
 
 export default pageContext.Wrapper(({ params, searchParams }) => {
   return (

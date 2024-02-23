@@ -1,4 +1,4 @@
-import { pageContext } from '@/lib/pageContext'
+import { pageContext } from '@sodefa/next-server-context'
 
 export const NestedServerComponent = () => {
   const { params, searchParams } = pageContext.getOrThrow()
