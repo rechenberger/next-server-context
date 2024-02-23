@@ -79,6 +79,9 @@ importers:
       '@types/node':
         specifier: ^18.16.0
         version: 18.16.0
+      '@types/react':
+        specifier: ^18
+        version: 18.0.0
       tsup:
         specifier: ^7.1.0
         version: 7.1.0(typescript@5.1.6)
