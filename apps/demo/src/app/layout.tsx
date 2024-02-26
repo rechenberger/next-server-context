@@ -33,9 +33,9 @@ export default function RootLayout({
               </Link>
               <Link
                 className="px-2 py-1 border rounded"
-                href="/zod/a/b/c?p1=a&p2=b&p2=3"
+                href="/zod/a/b/c?p1=a&p2=b&p2=3&p3=abc"
               >
-                /zod/a/b/c?p1=a&p2=b&p2=3
+                /zod/a/b/c?p1=a&p2=b&p2=3&p3=abc
               </Link>
             </nav>
             <hr />
