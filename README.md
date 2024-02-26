@@ -88,7 +88,8 @@ export const myContext = createServerContextWithZod(
     searchParams: z.object({
       p1: z.string().optional(),
       p2: z.array(z.string()).optional(),
-    }),
+    })
+    .catchall(z.string()),
   })
 )
 ```
