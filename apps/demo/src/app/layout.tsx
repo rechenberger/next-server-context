@@ -27,9 +27,9 @@ export default function RootLayout({
               </Link>
               <Link
                 className="px-2 py-1 border rounded"
-                href="/a/b/c?p1=a&p2=b&p2=3"
+                href="/simple/a/b/c?p1=a&p2=b&p2=3"
               >
-                /a/b/c?p1=a&p2=b&p2=3
+                /simple/a/b/c?p1=a&p2=b&p2=3
               </Link>
               <Link
                 className="px-2 py-1 border rounded"
