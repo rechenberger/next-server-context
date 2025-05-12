@@ -73,13 +73,13 @@ importers:
   packages/next-server-context:
     dependencies:
       react:
-        specifier: ^18
+        specifier: '*'
         version: 18.0.0
       react-dom:
-        specifier: ^18
+        specifier: '*'
         version: 18.0.0(react@18.0.0)
       zod:
-        specifier: ^3.21.4
+        specifier: '*'
         version: 3.22.4
     devDependencies:
       '@types/node':
